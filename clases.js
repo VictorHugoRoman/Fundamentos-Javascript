@@ -1,21 +1,17 @@
-class Punto {
+class Punto {//creamos la clase punto, no es necesario retornar this en javascript
   constructor(x, y) {
     this.x = x
     this.y = y
   }
-
   moverEnX(x) {
     this.x += x
   }
-
   moverEnY(y) {
     this.y += y
   }
-
   distancia(p) {
     const x = this.x - p.x
     const y = this.y - p.y
-
     return Math.sqrt(x * x + y * y)
   }
 }
