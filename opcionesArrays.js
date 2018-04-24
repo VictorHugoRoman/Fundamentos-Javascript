@@ -2,7 +2,7 @@
 Si queremos hacer una función que reciba N parámetros y devuelva la suma de estos, podemos escribirla como*/
 //ssumas
 //manera 1
-function suma(...numeros) {
+function suma(...numeros) {//"...numeros" significar que le pasaremos N parametros (1,2,3,4,5,.......)
   return numeros.reduce(function (acum, numero) {
     acum += numero
     return acum
